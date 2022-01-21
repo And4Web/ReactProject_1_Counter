@@ -11,7 +11,7 @@ class Main extends Component {
       <h1>React Counter</h1>
       <h1>0</h1>
       <button className="btn btn-danger">DECREMENT</button>
-      <button className="btn btn-primary">NEAUTRAL</button>
+      <button className="btn btn-primary">NEUTRAL</button>
       <button className="btn btn-success">INCREMENT</button>
     </div>
     );
