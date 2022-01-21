@@ -7,3 +7,5 @@ Technologies used in this project:
 1. create-react-app
 2. bootstrap
 3. webgradients
+   #Note: use of !important after some of the css properties.
+4.
