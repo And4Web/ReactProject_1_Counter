@@ -3,17 +3,36 @@ import React, { Component } from "react";
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      number: 0,
+    };
   }
+
+  increment = () => {
+    this.setState({ number: this.state.number + 1 });
+  };
+  decrement = () => {
+    this.setState({ number: this.state.number - 1 });
+  };
+  neutral = () => {
+    this.setState({ number: 0 });
+  };
+
   render() {
     return (
       <div className="row justify-content-center">
         <div className="col-md-5 container">
           <h1>React Counter</h1>
-          <h1>0</h1>
-          <button className="btn btn-danger">DECREMENT</button>
-          <button className="btn btn-primary">NEUTRAL</button>
-          <button className="btn btn-success">INCREMENT</button>
+          <h1>{this.state.number}</h1>
+          <button className="btn btn-danger" onClick={this.decrement}>
+            DECREMENT
+          </button>
+          <button className="btn btn-primary" onClick={this.neutral}>
+            NEUTRAL
+          </button>
+          <button className="btn btn-success" onClick={this.increment}>
+            INCREMENT
+          </button>
         </div>
       </div>
     );
