@@ -9,6 +9,16 @@ body {
   height: 100vh;
 }
 
+.container {
+  margin-top: 50% !important;
+}
+h1 {
+  margin: 20px !important;
+}
+button {
+  margin: 20px !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
